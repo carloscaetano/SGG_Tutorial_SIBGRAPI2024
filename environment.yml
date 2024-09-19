@@ -1,0 +1,31 @@
+name: SGG
+channels:
+  - conda-forge
+  - pytorch-nightly
+  - pytorch
+  - defaults
+dependencies:
+  - python == 3.8.10
+  - ipykernel >= 5.1
+  - ipython
+  - pandas
+  - networkx
+  - scipy
+  - h5py
+  - ninja 
+  - yacs 
+  - cython 
+  - matplotlib 
+  - tqdm 
+  - overrides
+  - setuptools
+  - dill
+  - pycocotools
+  - pip:
+      - --find-links https://download.pytorch.org/whl/torch_stable.html
+      - torch==1.9.0+cu111
+      - torchvision==0.10.0+cu111
+      - wandb
+      - PyQt5
+      - opencv-python
+      - numpy==1.23.1
